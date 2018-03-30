@@ -1,3 +1,3 @@
 # Python
-A sample client/server application using python
-The client application queries a simple local database (text file) for information.
+A sample client/server application using python.
+A continously running client application queries a simple local database server (text file) for information. The server process and send back the request to the client application. Both applications run on a local machine for now...
