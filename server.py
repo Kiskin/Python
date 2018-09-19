@@ -22,8 +22,6 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
        # print("{} wrote:".format(self.client_address[0]))
         aQuery = self.data.decode("utf-8")
         splitQuery = aQuery.split("|")
-        #print(splitQuery[len(splitQuery)-1])#REMOVE THESE PRINT STATEMENTS FOR THE SERVER
-       # print(splitQuery)
         passedString =aQuery[:-2]
         bQuery = QueryProcessing.serverReply(splitQuery[len(splitQuery)-1],passedString)
        
